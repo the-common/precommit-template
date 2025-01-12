@@ -3,7 +3,7 @@
 # See https://pre-commit.com/hooks.html for more hooks
 #
 # This file is based on The common pre-commit framework configuration template
-# https://github.com/the-common/pre-commit-config-template
+# https://gitlab.com/the-common/pre-commit-config-template
 #
 # Copyright 2025 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
