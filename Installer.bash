@@ -118,13 +118,15 @@ init(){
 
             printf \
                 'Installing template files...\n'
+            template="${RUNTIME_EXECUTABLE_DIRECTORY}/template.pre-commit-config.yaml"
+
             mkdir \
                 --parents \
                 "${install_directory_templates}"
             install \
                 --verbose \
                 --mode=u=rw,go=r \
-                "${RUNTIME_EXECUTABLE_DIRECTORY}/.pre-commit-config.yaml" \
+                "${template}" \
                 "${install_directory_templates}"/.pre-commit-config.yaml
             printf '\n' # Seperate output from different operations
 
@@ -157,8 +159,8 @@ init(){
                 install \
                     --verbose \
                     --mode=u=rw,go=r \
-                    "${RUNTIME_EXECUTABLE_DIRECTORY}/.pre-commit-config.yaml" \
-                    "${HOME}/.local/share/templates"
+                    "${template}" \
+                    "${HOME}/.local/share/templates/.pre-commit-config.yaml"
                 install \
                     --verbose \
                     --mode=u=rw,go=r \
@@ -174,7 +176,7 @@ init(){
                     "${install_directory_project}"/.pre-commit-config.yaml{,."$(date +%Y%m%d-%H%M%S-%A)".bak}
                 install \
                     --mode=0644 \
-                    "${RUNTIME_EXECUTABLE_DIRECTORY}"/.pre-commit-config.yaml \
+                    "${template}" \
                     "${install_directory_project}"/.pre-commit-config.yaml
             fi
         ;;
