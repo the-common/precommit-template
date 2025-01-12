@@ -8,8 +8,8 @@ that should be easily adaptable for most project's with little modifications.
 
 ## How to use
 
-* Copy the [common.pre-commit-config.yaml](common.pre-commit-config.yaml) file to your preferred
-  location as .pre-commit-config.yaml
+* Copy the [template.pre-commit-config.yaml](template.pre-commit-config.yaml) file to your preferred
+  location as .pre-commit-config.yaml.
 * Download the source code and run [Installer.bash](Installer.bash) program to setup template
   files for desktop environments.  If you specify a directory as argument it will install the
   template file to the directory instead.
