@@ -120,7 +120,7 @@ init(){
                 'Installing template files...\n'
             mkdir \
                 --parents \
-                "${XDG_TEMPLATES_DIR}"
+                "${install_directory_templates}"
             install \
                 --verbose \
                 --mode=u=rw,go=r \
