@@ -7,4 +7,4 @@
 Name=.pre-commit-config.yaml
 Type=Link
 Icon=text-x-plain
-URL=common.pre-commit-config.yaml
+URL=template.pre-commit-config.yaml

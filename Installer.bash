@@ -3,7 +3,7 @@
 
 # Install the templates to their proper locations
 #
-# Copyright 2020 林博仁(Buo-ren, Lin) <Buo.Ren.Lin@gmail.com>
+# Copyright 2025 林博仁(Buo-ren Lin) <buo.ren.lin@gmail.com>
 # SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Error on premature signs
@@ -160,11 +160,11 @@ init(){
                     --verbose \
                     --mode=u=rw,go=r \
                     "${template}" \
-                    "${HOME}/.local/share/templates/.pre-commit-config.yaml"
+                    "${HOME}/.local/share/templates/template.pre-commit-config.yaml"
                 install \
                     --verbose \
                     --mode=u=rw,go=r \
-                    "${RUNTIME_EXECUTABLE_DIRECTORY}/Template Setup for KDE"/*.desktop \
+                    "${RUNTIME_EXECUTABLE_DIRECTORY}/Template Setup for KDE/template.pre-commit-config.yaml.desktop" \
                     "${HOME}/.local/share/templates"
             fi
             unset answer
